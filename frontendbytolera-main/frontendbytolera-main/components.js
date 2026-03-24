@@ -8,7 +8,6 @@ class MainHeader extends HTMLElement {
         <h1 class="title">3D TEAM</h1>
       </div>
 
-      <!-- Navigation with links -->
       <nav class="nav-links">
         <a href="Home.html">Home</a>
         <a href="About.html">About</a>
@@ -20,10 +19,9 @@ class MainHeader extends HTMLElement {
     this.highlightActiveLink();
   }
 
-  // Modern touch: Automatically highlight the current page
   highlightActiveLink() {
     const links = this.querySelectorAll('nav a');
-    const currentPath = window.location.pathname.split("/").pop() || "Home.html";
+    const currentPath = window.location.pathname.split('/').pop() || 'Home.html';
 
     links.forEach(link => {
       if (link.getAttribute('href') === currentPath) {
@@ -58,23 +56,6 @@ class MainFooter extends HTMLElement {
   }
 }
 
-// Registering the custom tags
+// Register the custom tags
 customElements.define('main-header', MainHeader);
 customElements.define('main-footer', MainFooter);
-
-
-// Registering the custom tags
-customElements.define('main-header', MainHeader);
-customElements.define('main-footer', MainFooter);
-customElements.define('about-preview', AboutPreview);
-customElements.define('projects-preview', ProjectsPreview);
-customElements.define('contact-link', ContactLink);
-customElements.define('about-hero', AboutHero);
-customElements.define('our-story', OurStory);
-customElements.define('mission-vision', MissionVision);
-customElements.define('team-section', TeamSection);
-customElements.define('skills-section', SkillsSection);
-customElements.define('projects-hero', ProjectsHero);
-customElements.define('projects-gallery', ProjectsGallery);
-customElements.define('contact-section', ContactSection);
-customElements.define('contact-info', ContactInfo);

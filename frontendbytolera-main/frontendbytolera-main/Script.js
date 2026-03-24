@@ -43,3 +43,10 @@ form.addEventListener('submit', (e) => {
        console.log("Email:", email);
         console.log("Message:", message);
 });
+//
+const form=document.querySelector("contact-form");
+const demo=decument.getElementById("demo");
+//okay what can I say right now what do I need next ? 
+/*
+
+*/

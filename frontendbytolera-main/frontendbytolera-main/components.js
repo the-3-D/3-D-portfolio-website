@@ -24,7 +24,7 @@ class MainHeader extends HTMLElement {
   highlightActiveLink() {
     const links = this.querySelectorAll('nav a');
     const currentPath = window.location.pathname.split("/").pop() || "Home.html";
-    
+
     links.forEach(link => {
       if (link.getAttribute('href') === currentPath) {
         link.classList.add('active-link');
@@ -61,3 +61,20 @@ class MainFooter extends HTMLElement {
 // Registering the custom tags
 customElements.define('main-header', MainHeader);
 customElements.define('main-footer', MainFooter);
+
+
+// Registering the custom tags
+customElements.define('main-header', MainHeader);
+customElements.define('main-footer', MainFooter);
+customElements.define('about-preview', AboutPreview);
+customElements.define('projects-preview', ProjectsPreview);
+customElements.define('contact-link', ContactLink);
+customElements.define('about-hero', AboutHero);
+customElements.define('our-story', OurStory);
+customElements.define('mission-vision', MissionVision);
+customElements.define('team-section', TeamSection);
+customElements.define('skills-section', SkillsSection);
+customElements.define('projects-hero', ProjectsHero);
+customElements.define('projects-gallery', ProjectsGallery);
+customElements.define('contact-section', ContactSection);
+customElements.define('contact-info', ContactInfo);

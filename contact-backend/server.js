@@ -10,6 +10,12 @@ const nodemailer = require("nodemailer");
 const app = express();
 app.use(cors());
 app.use(express.json()); // parse JSON requests
+app.use(express.static('../frontendbytolera-main/frontendbytolera-main')); // serve static files from frontend
+
+// Serve the contact page as root
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/../frontendbytolera-main/frontendbytolera-main/Contact.html');
+});
 
 
 // ===== Nodemailer transporter configuration =====

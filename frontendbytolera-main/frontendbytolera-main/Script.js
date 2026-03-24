@@ -38,15 +38,8 @@ form.addEventListener('submit', (e) => {
       demo.style.color = 'red';
     });
 
-    // to print the form data in the console for debugging
-       console.log("Name:", name);
-       console.log("Email:", email);
-        console.log("Message:", message);
+  // Log form data for debugging
+  console.log("Name:", name);
+  console.log("Email:", email);
+  console.log("Message:", message);
 });
-//
-const form=document.querySelector("contact-form");
-const demo=decument.getElementById("demo");
-//okay what can I say right now what do I need next ? 
-/*
-
-*/

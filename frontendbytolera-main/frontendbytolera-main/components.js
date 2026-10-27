@@ -1,4 +1,4 @@
-// HEADER COMPONENT
+// components.js
 class MainHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `

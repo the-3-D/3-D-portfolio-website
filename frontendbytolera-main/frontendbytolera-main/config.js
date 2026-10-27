@@ -1,4 +1,10 @@
 // config.js
+// config.js
+window.CONFIG = {
+  API_BASE_URL: "http://localhost:3000/api",
+  APP_NAME: "3D TEAM"
+};
+/*
 (function() {
     const head = document.head;
 
@@ -23,4 +29,4 @@
     fontAwesome.rel = "stylesheet";
     fontAwesome.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css";
     head.appendChild(fontAwesome);
-})();
+})();*/

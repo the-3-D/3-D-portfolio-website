@@ -1,70 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <script src="config.js"></script>
-    <script src="components.js" defer></script>
-    <title>3D| Projects</title>
-  </head>
-  <body>
-    <main-header></main-header>
-    <!-- ===== PROJECTS PAGE ===== -->
-    <section class="projects-hero">
+<head>
+  <!-- META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- TITLE -->
+  <title>3D | Projects</title>
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CONFIG (optional runtime settings) -->
+  <script src="config.js"></script>
+
+  <!-- COMPONENTS -->
+  <script src="components.js" defer></script>
+
+  <!-- PAGE LOGIC -->
+  <script src="Script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ===== HEADER COMPONENT ===== -->
+  <main-header></main-header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="projects-hero">
+    <div class="container">
       <h1>Our Projects</h1>
       <p>
         Discover how our team transforms bold ideas into real-world solutions —
-        blending creativity, code, and collaboration to build what matters.
+        blending creativity, code, and collaboration.
       </p>
-    </section>
+    </div>
+  </section>
+  <!-- ===== PROJECTS (DATA-DRIVEN) ===== -->
+  <section class="projects-gallery">
+    <div class="container">
+      <!-- 🔥 JS WILL INJECT PROJECT CARDS HERE -->
+      <div id="projectsContainer"></div>
+    </div>
+  </section>
 
-    <!-- ===== PROJECTS GALLERY ===== -->
-    <section class="projects-gallery">
-      <!-----PROJECT 1-->
-      <div class="project-card">
-        <img src="image/image5.png" alt="Project 1" />
-        <div class="project-info">
-          <h3>Project One</h3>
-          <p>
-            A brief description of this project, the technologies used, and the
-            outcome.
-          </p>
-        </div>
-      </div>
-      <!-------PROJECT 2-->
-      <div class="project-card">
-        <img src="image/image1.png" alt="Project 2" />
-        <div class="project-info">
-          <h3>Project Two</h3>
-          <p>
-            A brief description of this project, the technologies used, and the
-            outcome.
-          </p>
-        </div>
-      </div>
-      <!-------PROJECT 3-->
-      <div class="project-card">
-        <img src="image/image1.png" alt="Project 3" />
-        <div class="project-info">
-          <h3>Project Three</h3>
-          <p>
-            A brief description of this project, the technologies used, and the
-            outcome.
-          </p>
-        </div>
-      </div>
-      <!-- Repeat project-card for more projects -->
-    </section>
-    <!-- ===== CALL TO ACTION ===== -->
-    <section class="contact-link fade-in">
-      <h2>Let’s Build More Great things Together</h2>
-      <p>
-        Interested in collaborating or bringing your project idea to life? We’re
-        always open to exciting opportunities!
-      </p>
-      <a href="Contact.html" class="btn">Contact Us</a>
-    </section>
+  <!-- ===== CONTACT (COMPONENT SLOT) ===== -->
+  <section id="contactSection" class="contact-link fade-in"></section>
 
-    <main-footer></main-footer>
+  <!-- ===== FOOTER COMPONENT ===== -->
+  <main-footer></main-footer>
 
-    <script src="Script.js"></script>
-  </body>
+</body>
 </html>

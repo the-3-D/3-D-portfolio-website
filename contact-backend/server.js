@@ -3,6 +3,7 @@
 //okay let me start development with granting my self that there is no any problem with writing code 
 //my fellow can do it ,generate it .... 
 //so what is my role in this program 
+
 const express = require('express');
 //what is express means here?
 //expess is a web application framework for Node.js, designed to build web applications and APIs. It provides a robust set of features for web and mobile applications, making it easier to handle routing, middleware, and server-side logic. In this code, we use Express to create a server that can handle HTTP requests and serve static files from the frontend.
@@ -38,7 +39,7 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "abenithegrace@gmail.com",        // <-- replace with your Gmail
-    pass: "kmqokmipcqeolzyg"            // <-- replace with Gmail App Password
+    pass: "@Abeni.7./jesus"            // <-- replace with Gmail App Password
   }
 }
 );
